@@ -1,126 +1,66 @@
 ### YamlMime:ManagedReference
 items:
-- uid: "com.microsoft.azure.functions.annotation.Cardinality"
-  id: "Cardinality"
-  parent: "com.microsoft.azure.functions.annotation"
+- uid: com.microsoft.azure.functions.annotation.Cardinality
+  id: Cardinality
+  parent: com.microsoft.azure.functions.annotation
   children:
-  - "com.microsoft.azure.functions.annotation.Cardinality.values()"
-  - "com.microsoft.azure.functions.annotation.Cardinality.valueOf(java.lang.String)"
-  - "com.microsoft.azure.functions.annotation.Cardinality.ONE"
-  - "com.microsoft.azure.functions.annotation.Cardinality.MANY"
+  - com.microsoft.azure.functions.annotation.Cardinality.MANY
+  - com.microsoft.azure.functions.annotation.Cardinality.ONE
+  href: com.microsoft.azure.functions.annotation.Cardinality.yml
   langs:
-  - "java"
-  name: "Cardinality"
-  nameWithType: "Cardinality"
-  fullName: "com.microsoft.azure.functions.annotation.Cardinality"
-  type: "Enum"
-  package: "com.microsoft.azure.functions.annotation"
-  summary: "Cardinality of the EventHubTrigger input. Choose 'ONE' if the input is a single message or 'Many' if the input is an array of messages. 'Many' is the default if unspecified"
+  - java
+  name: Cardinality
+  nameWithType: Cardinality
+  fullName: com.microsoft.azure.functions.annotation.Cardinality
+  type: Enum
+  source:
+    remote: &o0
+      path: src/main/java/com/microsoft/azure/functions/annotation/Cardinality.java
+      branch: master
+      repo: https://github.com/Azure/azure-functions-java-library
+    path: src/main/java/com/microsoft/azure/functions/annotation/Cardinality.java
+    startLine: 16
+  package: com.microsoft.azure.functions.annotation
+  summary: "<p>Cardinality of the EventHubTrigger input. Choose 'ONE' if the input is a single message or 'Many' if the input is an array of messages. 'Many' is the default if unspecified </p>\r\n<p></p>"
   syntax:
-    content: "public enum Cardinality extends Enum<Cardinality>"
+    content: public enum Cardinality
   inheritance:
-  - "java.lang.Enum<com.microsoft.azure.functions.annotation.Cardinality>"
-- uid: "com.microsoft.azure.functions.annotation.Cardinality.Cardinality()"
-  id: "Cardinality()"
-  parent: "com.microsoft.azure.functions.annotation.Cardinality"
+  - java.lang.Object
+  - java.lang.Enum<Cardinality>
+- uid: com.microsoft.azure.functions.annotation.Cardinality.MANY
+  id: MANY
+  parent: com.microsoft.azure.functions.annotation.Cardinality
+  href: com.microsoft.azure.functions.annotation.Cardinality.yml
   langs:
-  - "java"
-  name: "Cardinality()"
-  nameWithType: "Cardinality.Cardinality()"
-  fullName: "com.microsoft.azure.functions.annotation.Cardinality.Cardinality()"
-  overload: "com.microsoft.azure.functions.annotation.Cardinality.Cardinality*"
-  type: "Constructor"
-  package: "com.microsoft.azure.functions.annotation"
+  - java
+  name: MANY
+  nameWithType: Cardinality.MANY
+  fullName: com.microsoft.azure.functions.annotation.Cardinality.MANY
+  type: Field
+  source:
+    remote: *o0
+    path: src/main/java/com/microsoft/azure/functions/annotation/Cardinality.java
+    startLine: 25
+  package: com.microsoft.azure.functions.annotation
+  summary: "<p>To receive events in a batch, set cardinality to MANY. This is the default if omitted. </p>"
   syntax:
-    content: "private Cardinality()"
-- uid: "com.microsoft.azure.functions.annotation.Cardinality.values()"
-  id: "values()"
-  parent: "com.microsoft.azure.functions.annotation.Cardinality"
+    content: public MANY
+- uid: com.microsoft.azure.functions.annotation.Cardinality.ONE
+  id: ONE
+  parent: com.microsoft.azure.functions.annotation.Cardinality
+  href: com.microsoft.azure.functions.annotation.Cardinality.yml
   langs:
-  - "java"
-  name: "values()"
-  nameWithType: "Cardinality.values()"
-  fullName: "com.microsoft.azure.functions.annotation.Cardinality.values()"
-  overload: "com.microsoft.azure.functions.annotation.Cardinality.values*"
-  type: "Method"
-  package: "com.microsoft.azure.functions.annotation"
+  - java
+  name: ONE
+  nameWithType: Cardinality.ONE
+  fullName: com.microsoft.azure.functions.annotation.Cardinality.ONE
+  type: Field
+  source:
+    remote: *o0
+    path: src/main/java/com/microsoft/azure/functions/annotation/Cardinality.java
+    startLine: 20
+  package: com.microsoft.azure.functions.annotation
+  summary: "<p>To receive a single message, set cardinality to ONE </p>"
   syntax:
-    content: "public static Cardinality[] values()"
-    return:
-      type: "com.microsoft.azure.functions.annotation.Cardinality[]"
-- uid: "com.microsoft.azure.functions.annotation.Cardinality.valueOf(java.lang.String)"
-  id: "valueOf(java.lang.String)"
-  parent: "com.microsoft.azure.functions.annotation.Cardinality"
-  langs:
-  - "java"
-  name: "valueOf(String name)"
-  nameWithType: "Cardinality.valueOf(String name)"
-  fullName: "com.microsoft.azure.functions.annotation.Cardinality.valueOf(String name)"
-  overload: "com.microsoft.azure.functions.annotation.Cardinality.valueOf*"
-  type: "Method"
-  package: "com.microsoft.azure.functions.annotation"
-  syntax:
-    content: "public static Cardinality valueOf(String name)"
-    parameters:
-    - id: "name"
-      type: "java.lang.String"
-    return:
-      type: "com.microsoft.azure.functions.annotation.Cardinality"
-- uid: "com.microsoft.azure.functions.annotation.Cardinality.ONE"
-  id: "ONE"
-  parent: "com.microsoft.azure.functions.annotation.Cardinality"
-  langs:
-  - "java"
-  name: "ONE"
-  nameWithType: "Cardinality.ONE"
-  fullName: "com.microsoft.azure.functions.annotation.Cardinality.ONE"
-  type: "Field"
-  package: "com.microsoft.azure.functions.annotation"
-  summary: "To receive a single message, set cardinality to ONE"
-  syntax:
-    content: "public static final Cardinality ONE"
-    return:
-      type: "com.microsoft.azure.functions.annotation.Cardinality"
-- uid: "com.microsoft.azure.functions.annotation.Cardinality.MANY"
-  id: "MANY"
-  parent: "com.microsoft.azure.functions.annotation.Cardinality"
-  langs:
-  - "java"
-  name: "MANY"
-  nameWithType: "Cardinality.MANY"
-  fullName: "com.microsoft.azure.functions.annotation.Cardinality.MANY"
-  type: "Field"
-  package: "com.microsoft.azure.functions.annotation"
-  summary: "To receive events in a batch, set cardinality to MANY. This is the default if omitted."
-  syntax:
-    content: "public static final Cardinality MANY"
-    return:
-      type: "com.microsoft.azure.functions.annotation.Cardinality"
-references:
-- uid: "com.microsoft.azure.functions.annotation.Cardinality.Cardinality*"
-  name: "Cardinality"
-  nameWithType: "Cardinality.Cardinality"
-  fullName: "com.microsoft.azure.functions.annotation.Cardinality.Cardinality"
-- uid: "com.microsoft.azure.functions.annotation.Cardinality.values*"
-  name: "values"
-  nameWithType: "Cardinality.values"
-  fullName: "com.microsoft.azure.functions.annotation.Cardinality.values"
-- uid: "java.lang.String"
-  isExternal: true
-  name: "String"
-  nameWithType: "String"
-  fullName: "java.lang.String"
-- uid: "com.microsoft.azure.functions.annotation.Cardinality.valueOf*"
-  name: "valueOf"
-  nameWithType: "Cardinality.valueOf"
-  fullName: "com.microsoft.azure.functions.annotation.Cardinality.valueOf"
-- uid: "java.lang.Enum<com.microsoft.azure.functions.annotation.Cardinality>"
-  isExternal: true
-  name: "Enum<Cardinality>"
-  nameWithType: "Enum<Cardinality>"
-  fullName: "java.lang.Enum<com.microsoft.azure.functions.annotation.Cardinality>"
-- uid: "java.lang.Enum"
-  isExternal: true
-  name: "Enum"
-  nameWithType: "Enum"
-  fullName: "java.lang.Enum"
+    content: public ONE
+references: []

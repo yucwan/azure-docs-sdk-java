@@ -1,126 +1,66 @@
 ### YamlMime:ManagedReference
 items:
-- uid: "com.microsoft.azure.functions.annotation.AccessRights"
-  id: "AccessRights"
-  parent: "com.microsoft.azure.functions.annotation"
+- uid: com.microsoft.azure.functions.annotation.AccessRights
+  id: AccessRights
+  parent: com.microsoft.azure.functions.annotation
   children:
-  - "com.microsoft.azure.functions.annotation.AccessRights.values()"
-  - "com.microsoft.azure.functions.annotation.AccessRights.valueOf(java.lang.String)"
-  - "com.microsoft.azure.functions.annotation.AccessRights.MANAGE"
-  - "com.microsoft.azure.functions.annotation.AccessRights.LISTEN"
+  - com.microsoft.azure.functions.annotation.AccessRights.LISTEN
+  - com.microsoft.azure.functions.annotation.AccessRights.MANAGE
+  href: com.microsoft.azure.functions.annotation.AccessRights.yml
   langs:
-  - "java"
-  name: "AccessRights"
-  nameWithType: "AccessRights"
-  fullName: "com.microsoft.azure.functions.annotation.AccessRights"
-  type: "Enum"
-  package: "com.microsoft.azure.functions.annotation"
-  summary: "Azure Service Bus permission."
+  - java
+  name: AccessRights
+  nameWithType: AccessRights
+  fullName: com.microsoft.azure.functions.annotation.AccessRights
+  type: Enum
+  source:
+    remote: &o0
+      path: src/main/java/com/microsoft/azure/functions/annotation/AccessRights.java
+      branch: master
+      repo: https://github.com/Azure/azure-functions-java-library
+    path: src/main/java/com/microsoft/azure/functions/annotation/AccessRights.java
+    startLine: 13
+  package: com.microsoft.azure.functions.annotation
+  summary: "<p>Azure Service Bus permission.</p>\r\n<p></p>"
   syntax:
-    content: "public enum AccessRights extends Enum<AccessRights>"
+    content: public enum AccessRights
   inheritance:
-  - "java.lang.Enum<com.microsoft.azure.functions.annotation.AccessRights>"
-- uid: "com.microsoft.azure.functions.annotation.AccessRights.AccessRights()"
-  id: "AccessRights()"
-  parent: "com.microsoft.azure.functions.annotation.AccessRights"
+  - java.lang.Object
+  - java.lang.Enum<AccessRights>
+- uid: com.microsoft.azure.functions.annotation.AccessRights.LISTEN
+  id: LISTEN
+  parent: com.microsoft.azure.functions.annotation.AccessRights
+  href: com.microsoft.azure.functions.annotation.AccessRights.yml
   langs:
-  - "java"
-  name: "AccessRights()"
-  nameWithType: "AccessRights.AccessRights()"
-  fullName: "com.microsoft.azure.functions.annotation.AccessRights.AccessRights()"
-  overload: "com.microsoft.azure.functions.annotation.AccessRights.AccessRights*"
-  type: "Constructor"
-  package: "com.microsoft.azure.functions.annotation"
+  - java
+  name: LISTEN
+  nameWithType: AccessRights.LISTEN
+  fullName: com.microsoft.azure.functions.annotation.AccessRights.LISTEN
+  type: Field
+  source:
+    remote: *o0
+    path: src/main/java/com/microsoft/azure/functions/annotation/AccessRights.java
+    startLine: 22
+  package: com.microsoft.azure.functions.annotation
+  summary: "<p>Confers the right to listen (relay) or receive (queue, subscriptions) and all related message handling. </p>"
   syntax:
-    content: "private AccessRights()"
-- uid: "com.microsoft.azure.functions.annotation.AccessRights.values()"
-  id: "values()"
-  parent: "com.microsoft.azure.functions.annotation.AccessRights"
+    content: public LISTEN
+- uid: com.microsoft.azure.functions.annotation.AccessRights.MANAGE
+  id: MANAGE
+  parent: com.microsoft.azure.functions.annotation.AccessRights
+  href: com.microsoft.azure.functions.annotation.AccessRights.yml
   langs:
-  - "java"
-  name: "values()"
-  nameWithType: "AccessRights.values()"
-  fullName: "com.microsoft.azure.functions.annotation.AccessRights.values()"
-  overload: "com.microsoft.azure.functions.annotation.AccessRights.values*"
-  type: "Method"
-  package: "com.microsoft.azure.functions.annotation"
+  - java
+  name: MANAGE
+  nameWithType: AccessRights.MANAGE
+  fullName: com.microsoft.azure.functions.annotation.AccessRights.MANAGE
+  type: Field
+  source:
+    remote: *o0
+    path: src/main/java/com/microsoft/azure/functions/annotation/AccessRights.java
+    startLine: 17
+  package: com.microsoft.azure.functions.annotation
+  summary: "<p>Confers the right to manage the topology of the namespace, including creating and deleting entities. </p>"
   syntax:
-    content: "public static AccessRights[] values()"
-    return:
-      type: "com.microsoft.azure.functions.annotation.AccessRights[]"
-- uid: "com.microsoft.azure.functions.annotation.AccessRights.valueOf(java.lang.String)"
-  id: "valueOf(java.lang.String)"
-  parent: "com.microsoft.azure.functions.annotation.AccessRights"
-  langs:
-  - "java"
-  name: "valueOf(String name)"
-  nameWithType: "AccessRights.valueOf(String name)"
-  fullName: "com.microsoft.azure.functions.annotation.AccessRights.valueOf(String name)"
-  overload: "com.microsoft.azure.functions.annotation.AccessRights.valueOf*"
-  type: "Method"
-  package: "com.microsoft.azure.functions.annotation"
-  syntax:
-    content: "public static AccessRights valueOf(String name)"
-    parameters:
-    - id: "name"
-      type: "java.lang.String"
-    return:
-      type: "com.microsoft.azure.functions.annotation.AccessRights"
-- uid: "com.microsoft.azure.functions.annotation.AccessRights.MANAGE"
-  id: "MANAGE"
-  parent: "com.microsoft.azure.functions.annotation.AccessRights"
-  langs:
-  - "java"
-  name: "MANAGE"
-  nameWithType: "AccessRights.MANAGE"
-  fullName: "com.microsoft.azure.functions.annotation.AccessRights.MANAGE"
-  type: "Field"
-  package: "com.microsoft.azure.functions.annotation"
-  summary: "Confers the right to manage the topology of the namespace, including creating and deleting entities."
-  syntax:
-    content: "public static final AccessRights MANAGE"
-    return:
-      type: "com.microsoft.azure.functions.annotation.AccessRights"
-- uid: "com.microsoft.azure.functions.annotation.AccessRights.LISTEN"
-  id: "LISTEN"
-  parent: "com.microsoft.azure.functions.annotation.AccessRights"
-  langs:
-  - "java"
-  name: "LISTEN"
-  nameWithType: "AccessRights.LISTEN"
-  fullName: "com.microsoft.azure.functions.annotation.AccessRights.LISTEN"
-  type: "Field"
-  package: "com.microsoft.azure.functions.annotation"
-  summary: "Confers the right to listen (relay) or receive (queue, subscriptions) and all related message handling."
-  syntax:
-    content: "public static final AccessRights LISTEN"
-    return:
-      type: "com.microsoft.azure.functions.annotation.AccessRights"
-references:
-- uid: "com.microsoft.azure.functions.annotation.AccessRights.AccessRights*"
-  name: "AccessRights"
-  nameWithType: "AccessRights.AccessRights"
-  fullName: "com.microsoft.azure.functions.annotation.AccessRights.AccessRights"
-- uid: "com.microsoft.azure.functions.annotation.AccessRights.values*"
-  name: "values"
-  nameWithType: "AccessRights.values"
-  fullName: "com.microsoft.azure.functions.annotation.AccessRights.values"
-- uid: "java.lang.String"
-  isExternal: true
-  name: "String"
-  nameWithType: "String"
-  fullName: "java.lang.String"
-- uid: "com.microsoft.azure.functions.annotation.AccessRights.valueOf*"
-  name: "valueOf"
-  nameWithType: "AccessRights.valueOf"
-  fullName: "com.microsoft.azure.functions.annotation.AccessRights.valueOf"
-- uid: "java.lang.Enum<com.microsoft.azure.functions.annotation.AccessRights>"
-  isExternal: true
-  name: "Enum<AccessRights>"
-  nameWithType: "Enum<AccessRights>"
-  fullName: "java.lang.Enum<com.microsoft.azure.functions.annotation.AccessRights>"
-- uid: "java.lang.Enum"
-  isExternal: true
-  name: "Enum"
-  nameWithType: "Enum"
-  fullName: "java.lang.Enum"
+    content: public MANAGE
+references: []
