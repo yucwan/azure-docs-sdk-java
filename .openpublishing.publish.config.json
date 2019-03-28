@@ -80,6 +80,8 @@
   "targets": {},
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
+  "DiffFolder": [  "docs-ref-autogen/overview/azure" 
+  ], 
   "dependent_packages": [
     {
       "id": "opbuild.templates.uref",
